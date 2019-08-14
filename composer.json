@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/EMALLFACEBOOK",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "SMD Emall Facebook extension",
+    "authors": [
+    {
+        "name": "Extensions Mall",
+        "email": "info@extensionsmall.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

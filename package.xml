@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>EMALLFACEBOOK</name>
+    <version>1.0.0.</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>SMD Emall Facebook extension</summary>
+    <description>SMD Emall Facebook extension puts facebook container box at your magento webstore.</description>
+    <notes>Stable version of SMD EMall Facebook extension</notes>
+    <authors><author><name>Extensions Mall</name><user>smdesign</user><email>info@extensionsmall.com</email></author></authors>
+    <date>2013-07-09</date>
+    <time>12:33:24</time>
+    <contents><target name="mage"><dir name="."><dir name="app"><dir name="code"><dir name="community"><dir name="ExtensionsMall"><dir><dir name="EmallFacebook"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="Color.php" hash="3d252339a0faa24874c018f03469b419"/></dir></dir></dir></dir></dir><file name="Facebook.php" hash="2d2771c19f26280c2e03be0e342ba7e9"/></dir><dir name="Helper"><file name="Data.php" hash="70fb7b9b44cd66197e1671e3512f4b9b"/><file name="Help.php" hash="e381af5fcd2cedc3ff217218f4fd9feb"/></dir><dir name="Model"><file name="Salute.php" hash="92b37ae59fc1ddf74d93808e6f82e2a3"/><dir name="System"><dir name="Config"><dir name="Source"><dir name="Load"><file name="Options.php" hash="e9ff28374eb62d9b55f2c60930500709"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="70fbc13930f8891fb3be87cbe4cfcbcb"/><file name="config.xml" hash="4d91ae76c3e85d10600dcadc1b1e44ef"/><file name="system.xml" hash="9a031dcc4f19346420830f4971e5871d"/></dir></dir></dir></dir></dir></dir><dir name="design"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="emallfacebook.xml" hash="a1488474a5acfb0be49d0d751c358ac6"/></dir><dir name="template"><dir name="emallfacebook"><file name="facebook.phtml" hash="4c893952fa784bbf2fa8f2f021e7f2ec"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="ExtensionsMall_EmallFacebook.xml" hash="eb3a5b0efa79685b31041a66fda4f88d"/></dir></dir></dir><dir name="skin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="images"><dir name="emallfacebook"><file name="Thumbs.db" hash="b73e5318b7ba326f960024258fa10b6a"/><file name="facebook-button-hover.png" hash="ae39fa9614623cf8188f4a5debde8d2f"/><file name="facebook-button.png" hash="bc447d6de9d82cf578cc37a9e3367ef5"/><file name="gradient.png" hash="ec16b9e39888e609392cf3a35c293742"/></dir></dir></dir></dir></dir></dir><dir name="js"><dir name="emallfacebook"><file name="jquery-1.8.2.min.js" hash="caecbcd69abedb800083c9604ef832bb"/><dir><dir name="mColorPicker"><file name="color.png" hash="e83e9461de67b11df1c5dbafb3ce3b75"/><file name="grid.gif" hash="68cd006d56482882fc5207951fce6c65"/><file name="meta100.png" hash="8f64a39cee2667863597690e67928278"/><file name="picker.png" hash="6f7b525c44e04220893082eb072c6605"/></dir></dir><file name="mColorPicker.min.js" hash="6830ab053c662042942725d680b906ec"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0.</min><max>6.0.0.</max></php></required></dependencies>
+</package>
