@@ -2,7 +2,7 @@
 <config>
     <modules>
         <ExtensionsMall_EmallFacebook>
-            <version>1.2.0</version>
+            <version>1.2.1</version>
         </ExtensionsMall_EmallFacebook>
     </modules>
     <global>
@@ -51,15 +51,15 @@
                 <facebook_hide_cover>0</facebook_hide_cover>
                 <facebook_show_posts>1</facebook_show_posts>  
                 <facebook_showfaces>1</facebook_showfaces>
-                <facebook_small_header>1</facebook_small_header>
-                <facebook_adapt_container_width>1</facebook_adapt_container_width>
+                <facebook_small_header>0</facebook_small_header>
+                <facebook_adapt_container_width>0</facebook_adapt_container_width>
             </facebook>
             <facebook_style>
                 <facebook_box_side>left</facebook_box_side>
                 <facebook_box_top_position>250</facebook_box_top_position>
                 <facebook_box_width>250</facebook_box_width>
                 <facebook_box_height>250</facebook_box_height>
-                <facebook_box_background>#618499</facebook_box_background>
+                <facebook_box_background>#3399cc</facebook_box_background>
             </facebook_style>
         </extensionsmall_emallfacebook>
     </default>
