@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>css/emallfacebook.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="emallfacebook/facebook" name="emallfacebook" template="emallfacebook/facebook.phtml" after="-" />
+        </reference>
+        <!-- <reference name="content">
+            <block type="emallfacebook/facebook" name="emallfacebook-inline" template="emallfacebook/facebook-inline.phtml" after="-" />
+        </reference> -->
+    </default>
+</layout>

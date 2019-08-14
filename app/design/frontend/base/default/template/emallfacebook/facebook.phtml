@@ -1,0 +1,106 @@
+<?php
+/*
+  Magento Facebook Extension - Emall Facebook
+  Copyright (C) 2016  extensionsmall.com
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+  If you like our Extensions please keep the link at the bottom of widget.
+ */
+
+if ($this->isEnabled()):
+    ?>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+        function createCookie(name, value, days) {
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            }
+            else
+                var expires = "";
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+        function readCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ')
+                    c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0)
+                    return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        function eraseCookie(name) {
+            createCookie(name, "", -1);
+        }
+        function setState() {
+            if (readCookie('emalltwitt') == null) {
+                createCookie('emalltwitt', 'hide', 1);
+                $('emallfacebook-open').className = "";
+                $('emallfacebook-open').addClassName('close');
+            } else {
+                eraseCookie('emalltwitt');
+                $('emallfacebook-open').className = "";
+                $('emallfacebook-open').addClassName('open');
+            }
+        }
+        function checkCookie() {
+            if (readCookie('emalltwitt') == 'hide') {
+                $('emallfacebook').hide();
+            } else {
+                $('emallfacebook-open').className = "";
+                $('emallfacebook-open').addClassName('open');
+            }
+        }
+    </script>
+    <div class="emallfacebook-wraper <?php echo $this->getBoxSide() ?>" id="emallfacebook-wraper" style="top:<?php echo $this->getBoxTopPosition() ?>px;width:<?php echo $this->getBoxWidth() ?>px;">
+        <a id="emallfacebook-open" onclick="$('emallfacebook').toggle('blind');
+                    setState();
+                    return false;" href="#" style="background-color:<?php echo $this->getBoxBackground() ?>">&nbsp;</a>
+        <br />
+        <div class="emallfacebook" id="emallfacebook" style="background:<?php echo $this->getBoxBackground() ?>;">
+            <div id="toggle">
+                <div class="fb-page" 
+                     data-href="<?php echo $this->getPageLink() ?>"
+                     data-tabs="<?php echo $this->getTabs() ?>"
+                     data-width="<?php echo $this->getWidth() ?>"
+                     data-height="<?php echo $this->getHeight() ?>"
+                     data-hide-cover="<?php echo $this->getHideCover() ?>"
+                     data-show-facepile="<?php echo $this->getShowFaces() ?>" 
+                     data-show-posts="<?php echo $this->getShowPosts() ?>"
+                     data-small-header="<?php echo $this->getSmallHeader() ?>"
+                     data-adapt-container-width="<?php echo $this->getAdaptContainerWidth() ?>"></div>
+                <label style="background:<?php echo $this->getBoxBackground() ?>;">Provided by <a href="http://www.extensionsmall.com/" target="_blank">Extensions Mall</a></label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        checkCookie();
+    </script>
+    <?php
+
+ endif;

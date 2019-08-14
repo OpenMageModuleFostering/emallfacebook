@@ -1,0 +1,91 @@
+div.emallfacebook-wraper{
+    z-index: 1000;
+    position:fixed;
+}
+div.emallfacebook-wraper.left{
+    left:0px;
+}
+div.emallfacebook-wraper.right{
+    right:0px;
+}
+div#emallfacebook{
+    float:left;
+    opacity: 0.85;
+}
+div#emallfacebook label {
+    color: #fff;
+    border-radius: 0 0 9px 9px !important;
+    color: #FFFFFF;
+    float: left;
+    opacity: 0.85;
+    padding: 5px;
+    width: 96%;
+    font-size:10px;
+}
+div#emallfacebook label a{
+    text-decoration:none;
+    color: #fff;
+}
+div#emallfacebook label a:hover{
+    text-decoration:underline;
+}
+div.emallfacebook-wraper.left div#emallfacebook{
+    border-radius: 5px 5px 10px 10px;
+}
+div.emallfacebook-wraper.right div#emallfacebook{
+    border-radius: 10px 0 10px 10px;
+}
+#emallfacebook-open{
+    background-color: #3e3e3e;
+    background-image: url("../images/emallfacebook/facebook-button.png");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    color:#fff; 
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.1s ease 0.2s;
+    height: 40px;
+    width: 40px;
+    padding: 6px;
+}
+.emallfacebook-wraper.left #emallfacebook-open.open {
+    background-image: url("../images/emallfacebook/facebook-button-hover.png");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    color:#fff; 
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.8;
+    height: 40px;
+    width: 110px;
+    padding: 6px;
+}
+.emallfacebook-wraper.right #emallfacebook-open.open {
+    background-image: url("../images/emallfacebook/facebook-button-hover.png");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    color:#fff; 
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.8;
+    height: 40px;
+    width: 110px;
+    padding: 6px;
+}
+#emallfacebook-open:hover {
+    background-image: url("../images/emallfacebook/facebook-button-hover.png");
+    transition: all .2s;
+    padding-left: 110px; 
+}
+.emallfacebook-wraper.left #emallfacebook-open{
+    border-radius: 0 27px 27px 0;
+    margin-bottom: 1px;
+}
+.emallfacebook-wraper.right #emallfacebook-open{
+    border-radius: 25px 0 0 27px;
+    float: right;
+    margin-bottom: 1px;
+}        
+
+        

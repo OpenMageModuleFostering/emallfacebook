@@ -1,9 +1,9 @@
 {
     "name": "OpenMageModuleFostering/EMALLFACEBOOK",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "GNU-General-Public-License",
     "homepage": "",
-    "description": "SMD Emall Facebook extension",
+    "description": "ExtensionsMall Facebook Page Plugin extension",
     "authors": [
     {
         "name": "Extensions Mall",

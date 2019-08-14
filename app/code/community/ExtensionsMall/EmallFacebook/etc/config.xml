@@ -1,61 +1,67 @@
-<?xml version="1.1"?>
+<?xml version="1.0"?>
 <config>
-  <modules>
-    <ExtensionsMall_EmallFacebook>
-      <version>1.1.0</version>
-    </ExtensionsMall_EmallFacebook>
-  </modules>
- 
-  <global>
-    <models>
-      <emallfacebook>
-        <class>ExtensionsMall_EmallFacebook_Model</class>
-      </emallfacebook>
-    </models>
- 
-    <blocks>
-      <emallfacebook>
-        <class>ExtensionsMall_EmallFacebook_Block</class>
-      </emallfacebook>
-    </blocks>
- 
-    <helpers>
-      <emallfacebook>
-        <class>ExtensionsMall_EmallFacebook_Helper</class>
-      </emallfacebook>
-    </helpers>
-  </global>
- 
-  <frontend>
-    <layout>
-      <updates>
-        <emallfacebook>
-          <file>emallfacebook.xml</file>
-        </emallfacebook>
-      </updates>
-    </layout>
-  </frontend>
-  
-  <!--	START DEFAULTS	-->
-	<default>
-		<ExtensionsMall_EmallFacebook>
-				<facebook>
-					<enabled>1</enabled>
-					<facebook_feed>https://www.facebook.com/extensionsmall</facebook_feed>
-                    <facebook_box_side>1</facebook_box_side>
-					<facebook_box_top_position>50</facebook_box_top_position>
-					<facebook_box_width>250</facebook_box_width>
-					<facebook_box_height>250</facebook_box_height>
-					<facebook_box_background>#618499</facebook_box_background>
-					<facebook_theme>dark</facebook_theme>
-                    <facebook_showfaces>1</facebook_showfaces>
-                    <facebook_datastream>1</facebook_datastream>
-                    <facebook_showborder>1</facebook_showborder>
-                    <facebook_dataheader>0</facebook_dataheader>
-                    <facebook_forcewall>1</facebook_forcewall>
-				</facebook>
-		</ExtensionsMall_EmallFacebook>
-	</default>
-<!--	END DEFAULTS	-->
-
+    <modules>
+        <ExtensionsMall_EmallFacebook>
+            <version>1.2.0</version>
+        </ExtensionsMall_EmallFacebook>
+    </modules>
+    <global>
+        <resources>
+            <extensionsmall_emallfacebook>
+                <setup>
+                    <module>ExtensionsMall_EmallFacebook</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </extensionsmall_emallfacebook>
+        </resources>
+        <models>
+            <emallfacebook>
+                <class>ExtensionsMall_EmallFacebook_Model</class>
+            </emallfacebook>
+        </models>
+        <blocks>
+            <emallfacebook>
+                <class>ExtensionsMall_EmallFacebook_Block</class>
+            </emallfacebook>
+        </blocks>
+        <helpers>
+            <emallfacebook>
+                <class>ExtensionsMall_EmallFacebook_Helper</class>
+            </emallfacebook>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <emallfacebook>
+                    <file>emallfacebook.xml</file>
+                </emallfacebook>
+            </updates>
+        </layout>
+    </frontend>
+    <!--	START DEFAULTS	-->
+    <default>
+        <extensionsmall_emallfacebook>
+            <facebook>
+                <enabled>1</enabled>
+                <facebook_feed>https://www.facebook.com/extensionsmall</facebook_feed>
+                <facebook_tabs>timeline,events,messages</facebook_tabs>
+                <facebook_width>250</facebook_width>
+                <facebook_height>250</facebook_height>
+                <facebook_hide_cover>0</facebook_hide_cover>
+                <facebook_show_posts>1</facebook_show_posts>  
+                <facebook_showfaces>1</facebook_showfaces>
+                <facebook_small_header>1</facebook_small_header>
+                <facebook_adapt_container_width>1</facebook_adapt_container_width>
+            </facebook>
+            <facebook_style>
+                <facebook_box_side>left</facebook_box_side>
+                <facebook_box_top_position>250</facebook_box_top_position>
+                <facebook_box_width>250</facebook_box_width>
+                <facebook_box_height>250</facebook_box_height>
+                <facebook_box_background>#618499</facebook_box_background>
+            </facebook_style>
+        </extensionsmall_emallfacebook>
+    </default>
+    <!--	END DEFAULTS	-->
 </config>

@@ -1,22 +1,22 @@
 <config>
-	<acl>
-		<resources>
-			<admin>
-				<children>
-					<system>
-						<children>
-							<config>
-								<children>
-									<extensionsmall_emallfacebook translate="title" module="emallfacebook">
-									<title>Emall Facebook</title>
-									<sort_order>50</sort_order>
-									</extensionsmall_emallfacebook>
-								</children>
-							</config>
-						</children>
-					</system>
-				</children>
-			</admin>
-		</resources>
-	</acl>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <extensionsmall_emallfacebook translate="title" module="emallfacebook">
+                                        <title>Emall Facebook</title>
+                                        <sort_order>50</sort_order>
+                                    </extensionsmall_emallfacebook>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
 </config>
