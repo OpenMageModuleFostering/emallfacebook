@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/EMALLFACEBOOK",
+    "name": "OpenMageModuleFostering\/EMALLFACEBOOK",
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
     "description": "ExtensionsMall Facebook Page Plugin extension",
     "authors": [
-    {
-        "name": "Extensions Mall",
-        "email": "info@extensionsmall.com"
-    }
-],
+        {
+            "name": "Extensions Mall",
+            "email": "info@extensionsmall.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
